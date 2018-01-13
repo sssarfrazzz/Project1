@@ -1,10 +1,18 @@
-<div fxLayoutAlign="center row">
-  
-    <img src="../assets/TSLOGO.jpg" fxFlex="grow">
-    <div fxFLex>something</div>
-<mat-tab-group fxFlex >
+<div fxLayoutAlign=" row center">
+    <mat-toolbar>My App</mat-toolbar>
+    <img src="../assets/TSLOGO.jpg" fxFlex="20%">
+    
+<mat-tab-group fxFlexAlign="end">
   <mat-tab label="About Us">Content 1</mat-tab>
   <mat-tab label="Practice Areas">Content 2</mat-tab>
 </mat-tab-group>
-
 </div>
+<!-- <nav mat-tab-nav-bar>
+    <a mat-tab-link
+       *ngFor="let link of navLinks"
+       [routerLink]="link.path"
+       routerLinkActive #rla="routerLinkActive"
+       [active]="rla.isActive">
+      {{link.label}}
+    </a>
+  </nav> -->
