@@ -10,6 +10,7 @@ export class PracticeAreasComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('in practice area');
   }
 
 }
