@@ -32,6 +32,9 @@ import { FormComponent } from './form/form.component';
     MatToolbarModule,
     MatFormFieldModule, MatInputModule, MatButtonModule, MatMenuModule, MatIconModule,
     MatDividerModule, ReactiveFormsModule, FormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCK7sQJFFO1wkEAsBYv35b8BJ0Keq75hvE'
+    })
   ],
   entryComponents: [
     PracticeAreasComponent

@@ -27,16 +27,19 @@
                                 </div>
                                 <div fxFLex>
                                         <label> Phoe number: 9028845489 </label>
+                                        
                                 </div>
                         </div>
                 </div>
-                <mat-divider></mat-divider>
+                
                 <div  fxFLex="50%" >
                         
                         <div><app-form></app-form></div>
-                        
+                        <agm-map [latitude]="lat" [longitude]="lng">
+                                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                              </agm-map>
                 </div>
         </div>
-
+        
 
 </div>

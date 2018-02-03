@@ -6,7 +6,8 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./aboutus.component.css']
 })
 export class AboutusComponent implements OnInit {
-
+  lat = 17.659920;
+  lng = 	75.906387;
   email = new FormControl('', [Validators.required, Validators.email]);
   constructor() { }
 
