@@ -7,14 +7,11 @@ const routes: Routes = [
   {
   path: '',
   component: DashboardComponent,
-},
-{
-  path: 'About Us',
-  component: AboutusComponent,
-},
-{
-  path: 'Practise Areas',
-  component: PracticeAreasComponent,
+    children : [
+     { path: '', redirectTo: 'practice-areas', pathMatch: 'full'},
+      { path: 'practice-areas', component: PracticeAreasComponent},
+      { path: 'about-us', component: AboutusComponent},
+    ]
 },
 ];
 
