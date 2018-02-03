@@ -1,3 +1,17 @@
+<mat-toolbar color="accent" class="header-toolbar">
+        <mat-toolbar-row>
+          <span>ABC LAWYERS</span>
+          <span class="example-spacer"></span>
+         <a routerLink=""><button mat-button >Practise Areas</button></a>
+         
+         <a routerLink="About Us"><button mat-button>About Us</button></a>
+          
+          <mat-icon class="example-icon">verified_user</mat-icon>
+          
+        </mat-toolbar-row> 
+        
+      
+      </mat-toolbar>
 <div class="example-container" fxLayout="column center wrap">
         <div fxLayout="row space-around ">
                 <div fxFLex="50%">
@@ -6,38 +20,21 @@
                                         <img src="../../assets/image1.jpg">
                                 </div>
                                 <div fxFlex>
-                                        <label> Sarfraz Shaikh</label>
+                                        <label> Alan Joe</label>
                                 </div>
                                 <div fxFLex>
-                                        <span> Address: 35/7 sayyed chawl, Duttawadi, Akurdi, Pune </span>
+                                        <label> Address: 35/7 Baker Street, Suxxex, London</label>
                                 </div>
                                 <div fxFLex>
-                                        <span> Phoe number: 9028605879 </span>
+                                        <label> Phoe number: 9028845489 </label>
                                 </div>
                         </div>
                 </div>
                 <mat-divider></mat-divider>
                 <div  fxFLex="50%" >
-                        <div style="margin-left: 10px">
-
                         
-                        <mat-form-field>
-                                <input matInput placeholder="FirstName">
-                        </mat-form-field>
-                        <mat-form-field>
-                                <input matInput placeholder="LastName">
-                        </mat-form-field>
-                        <br>
-                        <mat-form-field>
-                                <input matInput placeholder="Mail-Id">
-                        </mat-form-field>
-                        <br>
-                        <mat-form-field>
-                                <textarea matInput placeholder="Your Concern"></textarea>
-                        </mat-form-field>
-                        <br>
-                        <button class="button-row" color="primary" mat-raised-button>Submit</button>
-                </div>
+                        <div><app-form></app-form></div>
+                        
                 </div>
         </div>
 

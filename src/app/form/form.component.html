@@ -1,0 +1,38 @@
+
+
+<div  style="margin-left: 30px">
+
+    <mat-form-field>
+    <input matInput placeholder="FirstName" required>
+    </mat-form-field>
+
+    <mat-form-field>
+    <input matInput placeholder="LastName">
+    </mat-form-field>
+  <br>
+  
+    <mat-form-field>
+    <textarea matInput placeholder="Your Concern"></textarea>
+    <mat-hint align="start">Min 25 characters</mat-hint>
+    </mat-form-field>
+  <br>
+  
+
+  <div class="example-container">
+  <mat-form-field>
+      <input  matInput  placeholder="Contact-No"  required>
+    </mat-form-field>
+  
+  </div>
+  <br>
+   <div class="example-container">
+    <mat-form-field>
+      <input matInput placeholder="Enter your email" [formControl]="email1" required>
+      <mat-error *ngIf="email1.hasError">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+  </div>
+  
+  <br>
+
+  <button class="button-row" color="primary" mat-raised-button>Submit</button>
+</div>
