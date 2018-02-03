@@ -1,12 +1,13 @@
+
 <div fxLayout="column" fxLayoutAlign=" center">
  
 <div fxFlex  >
     <mat-tab-group  >
-        <mat-tab label="Practice Areas">
+        <mat-tab label="Practice Areas" style ="width: 800px">
             <!-- <div fxFlex>
                 <img src="../assets/welcomeImage.jpeg">
               </div> -->
-          <app-practice-areas></app-practice-areas>
+      <app-practice-areas></app-practice-areas>
         </mat-tab>
        
         <mat-tab  label="About Us">
@@ -15,10 +16,20 @@
            
 
       </mat-tab-group>
+     <!-- <nav mat-tab-nav-bar>
+    <a mat-tab-link
+       [routerLink]="[practice-areas]">
+      Practice Areas
+    </a>
+    <a mat-tab-link
+    [routerLink]="[about-us]">
+   About Us
+ </a>
+  </nav> -->
 </div>
-
- 
-
+<!-- <div fxFLex>
+  <router-outlet></router-outlet>
+</div> -->
 </div>
 <!-- <nav mat-tab-nav-bar>
     <a mat-tab-link
