@@ -19,9 +19,9 @@
   <mat-toolbar-row>
     <span>ABC LAWYERS</span>
     <span class="example-spacer"></span>
-   <button mat-button   >Practise Area</button>
+   <a routerLink="/practice-areas"><button mat-button >Practise Areas</button></a>
    
-   <a routerLink="About Us"><button mat-button>About Us</button></a>
+   <a routerLink="/about-us"><button mat-button>About Us</button></a>
     
     <mat-icon class="example-icon">verified_user</mat-icon>
     
@@ -29,7 +29,7 @@
   
 
 </mat-toolbar>
-<app-practice-areas></app-practice-areas>
+<router-outlet></router-outlet>
     
 
 <!-- </div> -->
